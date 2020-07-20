@@ -2,25 +2,20 @@ import React, { Component } from "react";
 import axios from "axios";
 import { response } from "express";
 
-
 export default class PlantList extends Component {
-
   constructor(){
     super()
     this.state = {
       plants: []
     }
   }
+
   componentDidMount(){
-    axios.get('http://localhost:5000/api/players')
-    .then (res => {
-      // console.log(res.data)
-      this.setState({plants:res.data})
-      // console.log(this.state.players)
+    axios.get ('http://localhost:3333/plants')
+    this.setState({
+      plants:response.data,
+
     })
-  }
-
-
   // add state with a property called "plants" - initialize as an empty array
 
   // when the component mounts:
