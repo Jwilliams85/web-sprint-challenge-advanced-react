@@ -31,9 +31,11 @@ function App() {
           </h1>
           <ul className="steps">
             <li>
+             
               <NavLink exact to="/">
                 Plants
               </NavLink>
+             
             </li>
             <li>
               <NavLink to="/cart">
