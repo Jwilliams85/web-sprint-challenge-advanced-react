@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, NavLink } from "react-router-dom";
 import PlantList from "./components/PlantList";
 import ShoppingCart from "./components/ShoppingCart";
 import CheckoutForm from "./components/CheckoutForm";
+import Nav from "./components/Nav"
 
 import "./App.css";
 
@@ -30,8 +31,8 @@ function App() {
             React Plants <span role="img">🌿</span>
           </h1>
           <ul className="steps">
+            {/* <Nav/> */}
             <li>
-             
               <NavLink exact to="/">
                 Plants
               </NavLink>
