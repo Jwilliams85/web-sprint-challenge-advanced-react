@@ -10,7 +10,7 @@ import '@testing-library/jest-dom/extend-expect'
 
 test("form header renders", () => {
     const {getByText}= render(<CheckoutForm/>)
-    const header = getByText(/checkout form/i)
+    const header = getByText(/Checkout form/i)
     expect(header).toBeInTheDocument
 });
 
